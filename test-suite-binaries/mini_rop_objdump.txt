@@ -1,0 +1,15 @@
+
+mini_rop:     file format elf64-x86-64
+
+
+Disassembly of section .text:
+
+0000000000400078 <.text>:
+  400078:	48 83 ec 20          	sub    $0x20,%rsp
+  40007c:	48 89 e6             	mov    %rsp,%rsi
+  40007f:	48 c7 c2 40 00 00 00 	mov    $0x40,%rdx
+  400086:	48 c7 c7 00 00 00 00 	mov    $0x0,%rdi
+  40008d:	48 c7 c0 00 00 00 00 	mov    $0x0,%rax
+  400094:	0f 05                	syscall
+  400096:	c9                   	leave
+  400097:	c3                   	ret
